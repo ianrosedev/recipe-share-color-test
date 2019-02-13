@@ -1,5 +1,5 @@
 # Recipe Share Color Test
-Change the header colors of a fictional app. Made for fun to try out new color combinations interactively.
+Change the header colors to test out different combos quickly. Made for fun to try out new color combinations interactively.
 
 **Works best on large screens*
 
