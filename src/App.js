@@ -133,20 +133,14 @@ class App extends Component {
               </Grid>
               <Grid item xs={8}>
                 <form>
-                  <Button style={stylesMaterial.buttonFormFirst}>
-                    recipe
-                  </Button>
-                  <Button style={stylesMaterial.buttonForm}>
-                    ingredient
-                  </Button>
+                  <Button style={stylesMaterial.buttonFormFirst}>recipe</Button>
+                  <Button style={stylesMaterial.buttonForm}>ingredient</Button>
                   <input
                     type='text'
                     placeholder='find a recipe...'
                     style={stylesMaterial.textField}
                   />
-                  <Button style={stylesMaterial.buttonFormLast}>
-                    search
-                  </Button>
+                  <Button style={stylesMaterial.buttonFormLast}>search</Button>
                 </form>
               </Grid>
               <Grid item xs={2}>
@@ -181,7 +175,7 @@ class App extends Component {
                 'More Options...'
               ].map(element => {
                 return (
-                  <Button style={stylesMaterial.buttonBottom}>
+                  <Button key={element} style={stylesMaterial.buttonBottom}>
                     {element}
                   </Button>
                 );
@@ -203,7 +197,7 @@ class App extends Component {
             { title: 'Button Font Color', name: 'fontButtons' }
           ].map(element => {
             return (
-              <div style={stylesPicker.card}>
+              <div key={element.name} style={stylesPicker.card}>
                 <h3 style={stylesPicker.card.header}>{element.title}:</h3>
                 <SketchPicker
                   color={this.state[element.name]}
